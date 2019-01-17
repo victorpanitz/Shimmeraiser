@@ -1,0 +1,6 @@
+framework module Pods_Shimmeraiser_Example {
+  umbrella header "Pods-Shimmeraiser_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Shimmeraiser {
+  umbrella header "Shimmeraiser-umbrella.h"
+
+  export *
+  module * { export * }
+}
