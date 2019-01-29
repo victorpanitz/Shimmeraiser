@@ -21,19 +21,16 @@ final class MyCustomShimmer: Shimmerable {
             CGRect(x: 38, y: 90, width: 337, height: 130)
             )
         
-        (0..<5).forEach { i in
-            let factor = CGFloat(i)*190
-            let yValue: CGFloat = 250
-            
-            builder.appendOvalPath(from:
-                CGRect(x: 35, y: yValue + factor + 21, width: 40, height: 40)
-            )
-            builder.appendRectPath(cornerRadius: 3, from:
-                CGRect(x: 92, y: yValue + factor, width: 280, height: 90),
-                CGRect(x: 92, y: yValue + factor + 100, width: 280, height: 18),
-                CGRect(x: 92, y: yValue + factor + 128, width: 122, height: 18)
-            )
-        }
+        builder.appendList(
+            itensCount: 5,
+            xOffset: 0,
+            yOffset: 190,
+            shapes:
+            .oval(frame: CGRect(x: 35, y: 271, width: 40, height: 40)),
+            .rect(cornerRadius: 2, rect: CGRect(x: 92, y: 250, width: 280, height: 90)),
+            .rect(cornerRadius: 2, rect: CGRect(x: 92, y: 350, width: 280, height: 18)),
+            .rect(cornerRadius: 2, rect: CGRect(x: 92, y: 378, width: 122, height: 18))
+        )
         
         return builder.makeMaskPath()
     }

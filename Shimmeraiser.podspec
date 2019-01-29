@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Shimmeraiser'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Shimmeraiser implements a Shimmer enabling your to configure colors, animation duration, sizes and much more.'
 
   s.homepage         = 'https://github.com/victorpanitz/Shimmeraiser'

@@ -40,7 +40,7 @@ class ShimmerTests: QuickSpec {
                 }
 
                 it("então o sublayer de shimmerView.layer deverá ter o backgroundColor igual ao parâmetro startColor") {
-                    expect(shimmerView.layer.sublayers!.first!.backgroundColor) == #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1).cgColor
+                    expect(shimmerView.layer.sublayers!.first!.backgroundColor) == #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1).cgColor
                 }
 
                 it("então deverá adicionar um gradientLayer ao sublayer da shimmerView.layer") {
@@ -62,20 +62,20 @@ class ShimmerTests: QuickSpec {
                     let gradientLayer = (shimmerView.layer.sublayers!.first!.sublayers!.first! as! CAGradientLayer)
 
                     expect(gradientLayer.colors!.count) == 14
-                    expect((gradientLayer.colors![0] as! CGColor)) == #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1).withAlphaComponent(0.7).cgColor
-                    expect((gradientLayer.colors![1] as! CGColor)) == #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1).withAlphaComponent(0.2).cgColor
-                    expect((gradientLayer.colors![2] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.2).cgColor
-                    expect((gradientLayer.colors![3] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.4).cgColor
-                    expect((gradientLayer.colors![4] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.6).cgColor
-                    expect((gradientLayer.colors![5] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.8).cgColor
-                    expect((gradientLayer.colors![6] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(1.0).cgColor
-                    expect((gradientLayer.colors![7] as! CGColor)) ==  #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(1.0).cgColor
-                    expect((gradientLayer.colors![8] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.8).cgColor
-                    expect((gradientLayer.colors![9] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.6).cgColor
-                    expect((gradientLayer.colors![10] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.4).cgColor
-                    expect((gradientLayer.colors![11] as! CGColor)) == #colorLiteral(red: 0.9137254902, green: 0.9137254902, blue: 0.9137254902, alpha: 1).withAlphaComponent(0.2).cgColor
-                    expect((gradientLayer.colors![12] as! CGColor)) == #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1).withAlphaComponent(0.2).cgColor
-                    expect((gradientLayer.colors![13] as! CGColor)) == #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1).withAlphaComponent(0.7).cgColor
+                    expect((gradientLayer.colors![0] as! CGColor)) == #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1).withAlphaComponent(0.7).cgColor
+                    expect((gradientLayer.colors![1] as! CGColor)) == #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1).withAlphaComponent(0.2).cgColor
+                    expect((gradientLayer.colors![2] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.2).cgColor
+                    expect((gradientLayer.colors![3] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.4).cgColor
+                    expect((gradientLayer.colors![4] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.6).cgColor
+                    expect((gradientLayer.colors![5] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.8).cgColor
+                    expect((gradientLayer.colors![6] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(1.0).cgColor
+                    expect((gradientLayer.colors![7] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(1.0).cgColor
+                    expect((gradientLayer.colors![8] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.8).cgColor
+                    expect((gradientLayer.colors![9] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.6).cgColor
+                    expect((gradientLayer.colors![10] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.4).cgColor
+                    expect((gradientLayer.colors![11] as! CGColor)) == #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.2).cgColor
+                    expect((gradientLayer.colors![12] as! CGColor)) == #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1).withAlphaComponent(0.2).cgColor
+                    expect((gradientLayer.colors![13] as! CGColor)) == #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1).withAlphaComponent(0.7).cgColor
                 }
             }
 
